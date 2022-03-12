@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Muhamed Cerkezovic resume</title>
+    <!--First hour I was reading an article that was given to us and exploring about options,creating head and body.-->
+    <!--Second hour I spent on importing texty, profile picture  and finding background image.-->
+    <!--Third hour I used to style some text and profile picture,finding the right place for them-->
+    <!--Fourth hour and I am working with responsiveness ,also I switched to small divs from big holder because I wanted to add hover to divs.-->
+    <!--Fifth hour I am still trying to make it responsive.I imagined doing that with  the media queries and I want it to switch divs in block when screen is smaller,but I am struggling.I'm exploring ,I will solve it! -->
+    <!--Sixt hour I've added box shadows and text shadows ,changed pxs to vws to make page rensponsive,should have done that from the beggining but I completely fortgot about responsiveness.I fixed it . -->
+    <!--Sevent hour I've added transition to divs, my social networks links and made links into the icons.Also I have started with second page-->
+    <!--Eight hour I used to make new page (new big div) and adding text to it ,styling it ... -->
+    <!--Ninth hour I styled second page more and added anchor to div in first page.I also added media queries so it's fully responsive now -->
+    <style>
+        .stranica-1 {
+            height: 100vh;
+            margin: 0%;
+            background-image: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_928162118_394536.jpg);
+        }
+
+        .stranica-2 {
+            height: 100vh;
+            background-image: url(https://wallpapercave.com/wp/wp5135948.jpg);
+        }
+
+        #profile-pic {
+            width: 13vw;
+            height: 25vw;
+            border-radius: 50%;
+            margin: 15px;
+            box-shadow: 3px 3px black;
+            position: relative;
+            float: left;
+            max-width: 100%;
+            height: auto;
+        }
+
+        body {
+            width: 100%;
+            max-width: 100%;
+            height: 100vh;
+            font-family: Helvetica;
+        }
+
+        h1 {
+            font-size: 4vw;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+
+
+        }
+
+        .uvod {
+            text-align: left;
+            float: center;
+            background-color: rgba(146, 159, 168, 0.4);
+            font-size: 1vw;
+            margin-top: 0px;
+
+        }
+
+        .kvadrat {
+
+            padding: 10px;
+            width: 23%;
+            height: 300px;
+            border: 1px solid black;
+            display: inline-block;
+            vertical-align: top;
+            background-color: rgba(146, 159, 168, 0.4);
+            font-size: 1vw;
+            text-shadow: 2px 2px 4px #a5a3a3;
+            box-shadow: 3px 3px 4px black;
+            transition: 300ms;
+        }
+
+        .kvadrat:hover {
+            color: rgb(247, 248, 252);
+            width: 25%;
+            height: 330px;
+        }
+
+        .eduk-1:hover {
+            font-size: 1.3vw;
+
+        }
+
+        .eduk-2:hover {
+            font-size: 1.3vw;
+        }
+
+        .linkovi {
+            text-align: right;
+            margin: 0px 15px 0px 15px;
+        }
+        #ig{
+            width:3%
+        }
+
+        .stranica-2 div {
+            border: 1px solid rgb(238, 236, 236);
+            color: rgb(14, 13, 13);
+            display: inline-block;
+            vertical-align: top;
+            background-color: rgba(146, 159, 168, 0.4);
+            font-size: 1vw;
+            width: 23%;
+        }
+
+        .stranica-2 h1 {
+            color: white;
+            text-align: center;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+        @media screen and (max-width: 700px) {
+            .kvadrat{
+                display: block;
+                width:100%;
+                height: 10%;
+            }
+
+            .stranica-2 div{
+                display: block;
+                width:100%;
+                
+            }
+        }
+    </style>
+
+<body>
+    <div class="stranica-1">
+        <div class="linkovi">
+            <a href="https://www.instagram.com/hamecerkez/"><img id="ig"
+                    src="https://img.icons8.com/color/50/000000/instagram-new--v1.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/hamme.cerkez/"><img id="ig"
+                    src="https://img.icons8.com/fluency/48/000000/facebook-new.png" alt="facebook"></a>
+        </div>
+        <img id="profile-pic" src="https://i.ibb.co/5hpZpK7/upload.pngW" alt="Profile picture">
+        <div class="uvod">
+
+            <h1>MUHAMED ČERKEZOVIĆ</h1>
+
+            <h2>
+                <p>
+                    <strong>Address: </strong><em>Višća Gornja bb, 75270, Živinice</em>
+                </p>
+                <p>
+                    <strong>Place and date of birth: </strong><em>Tuzla, Bosnia and Herzegovina, 04.10.1997.</em>
+                </p>
+                <p>
+                    <strong>Phone number: </strong><em>387-62-659-143</em>
+                </p>
+                <p>
+                    <strong>Email: </strong><em>muhamedc97@hotmail.com</em>
+                </p>
+            </h2>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="kvadrat">
+            <p>
+            <h3>Education</h3>
+            </p>
+            <div class="eduk-1">
+                <p>
+                    09/2016-07/2020
+                    <strong>Engineer of medical radiology</strong>
+                </p>
+                <p>
+                    University of Tuzla (Tuzla,Bosnia and Herzegovina)
+                </p>
+            </div>
+            <div class="eduk-2">
+                <p>
+                    09/2012-06/2016
+                    <strong>Nurse</strong>
+                </p>
+                <p>
+                    Medical high school ( Tuzla, Bosnia and Herzegovina )
+                </p>
+            </div>
+        </div>
+        <div class="kvadrat">
+            <p>
+            <h3>Tehnical Skills and Experience</h3>
+            </p>
+            <ul>
+                <li>Microsoft Office-Solid knowledge of any of the MO package</li>
+                <li>PACS-High skills working in PACS</li>
+                <li>X-RAYS</li>
+                <li>Computed Tomography</li>
+                <li>MRI</li>
+                <li>Radiation therapy</li>
+                <li>Scintigraphy</li>
+            </ul>
+        </div>
+        <a href="#stranica-2">
+            <div class="kvadrat">
+                <h3>Professional Experience</h3>
+                <p>
+                    09/2020- 03/2021 Six months working in Dom zdravlja Živinice and UKC Tuzla as a part of Professional
+                    Development program.Introduced in all of the radiology tehniques</p>
+                <p>Click me</p>
+
+            </div>
+        </a>
+        <div class="kvadrat">
+            <h3>Languages</h3>
+            <p>
+                <strong>English</strong>
+                Fluent in written and spoken
+            </p>
+            <p>
+                <strong>German</strong>
+                Basic communication skills in
+            </p>
+            <p>
+                <strong>Bosnian</strong>
+                Native
+            </p>
+        </div>
+    </div>
+    </div>
+    <div id="stranica-2" class="stranica-2">
+        <h1>Proffesional development program</h1>
+        <div>
+            <h2>Internship in radiological diagnostics</h2>
+            <p>Tuzla University Hospital</p>
+            <p>21/10/2020 – 20/11/2020 | Tuzla, Bosnia and Herzegovina</p>
+            <ul>
+                <li>X-ray</li>
+                <li>Voiding cystouretrography</li>
+                <li>Diascopy</li>
+                <li>X-ray - Intravenous urography</li>
+                <li>Densitometry</li>
+                <li>Mammography</li>
+                <li>CT</li>
+            </ul>
+            <h2>Internship in children - X-ray diagnostics</h2>
+            <p>Tuzla University Hospital</p>
+            <p>16/01/2021 – 29/01/2021 | Tuzla, Bosnia and Herzegovina</p>
+
+        </div>
+        <div>
+            <h2>Internship in abdominal diagnostics</h2>
+            <p>Tuzla University Hospital</p>
+            <p>21/11/2020 – 04/12/2020 | Tuzla, Bosnia and Herzegovina</p>
+            <ul>
+                <li>Plain abdominal scan</li>
+                <li>Gastrointestinal passage</li>
+                <li>The swallowing stroke with diascopy of the esophagus</li>
+                <li>CT of the abdomen</li>
+                <li>Patient positioning</li>
+                <li>Administration of contrast medium</li>
+            </ul>
+            <h2>Internship in thoracic diagnostics</h2>
+            <p>Tuzla University Hospital</p>
+            <p>05/12/2020 – 18/12/2020 | Tuzla, Bosnia and Herzegovina</p>
+            <ul>
+                <li>Chest X-ray</li>
+                <li>Chest - CT</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Internship in bone and abdomen imaging</h2>
+            <p>Tuzla University Hospital</p>
+            <p>19/12/2020 – 01/01/2021 | Tuzla, Bosnia and Herzegovina</p>
+            <ul>
+                <li>X-ray of the joints</li>
+                <li>X-ray of the spine</li>
+                <li>X-ray of the bones of the extremities</li>
+                <li>X-ray of button and face bones</li>
+                <li>Densitometry</li>
+                <li>X-ray of the pelvic bones</li>
+                <li>Plain abdominal scan</li>
+                <li>X-ray of the urinary tract</li>
+                <li>X-ray of the spine</li>
+                <li>CT urogenital tract</li>
+                <li>CT of the abdomen</li>
+                <li>CT spine</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Internship in contrast diagnostics</h2>
+            <p>Tuzla University Hospital</p>
+            <p>02/01/2021 – 15/01/2021 | Tuzla, Bosnia and Herzegovina</p>
+            <ul>
+                <li>Preparation of the patient by contrast examination</li>
+                <li>Use of contrast media</li>
+                <li>Protection of the patient from side effects after the use of a contrast medium</li>
+            </ul>
+            <h2>Internship in radiotherapy</h2>
+            <p>Tuzla University Hospital</p>
+            <p>06/03/2021 – 05/04/2021 | Tuzla, Bosnia and Herzegovina</p>
+            <ul>
+                <li>Manufacture of immobilization devices</li>
+                <li>Patient positioning</li>
+                <li>Work on a CT simulator</li>
+                <li>Working on a linear accelerator</li>
+            </ul>
+        </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+</head>
+
+</html>
